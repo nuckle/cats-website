@@ -5,7 +5,7 @@ for (let i = 0; i < cards.length; i++) {
     const cardNumber = i + 1;
     const cardNumberElement = card.querySelector('.number');
 
-    cardNumberElement.innerHTML = cardNumber;    
+    cardNumberElement.innerHTML = cardNumber;
 };
 
 const menu = document.querySelector('.header-list');
@@ -20,9 +20,4 @@ document.addEventListener('click', (e) => {
         menu.classList.remove('header__list--show');
     }
 })
-
-// burger.addEventListener('click', () => {
-//     menu.classList.toggle('header__list--show');
-// })
-
-// body.addEventListener('click', ())
+}

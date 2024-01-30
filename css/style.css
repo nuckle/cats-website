@@ -60,7 +60,7 @@ body {
 }
 
 .header {
-    background-color: #000; 
+    background-color: #000;
 }
 
 .header__logo img {
@@ -83,7 +83,7 @@ body {
     transform: translateY(0);
 }
 
-.header__logo:hover + .header__heart {
+.header__logo:hover+.header__heart {
     transform: translateY(-30px);
     opacity: 1;
 }
@@ -183,7 +183,7 @@ body {
     top: 0;
     left: 0;
     border-radius: 5px;
-    box-shadow: 5px 5px 14px 6px rgba(0,0,0,0.8);
+    box-shadow: 5px 5px 14px 6px rgba(0, 0, 0, 0.8);
     transition: opacity 0.2s ease-in-out;
 }
 
@@ -375,7 +375,7 @@ article header .heart::after {
     column-gap: 55px;
 }
 
-.about-block > div {
+.about-block>div {
     max-width: 100%;
 }
 

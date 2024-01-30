@@ -1,12 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Best cats of all time</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="icon" href="/img/favicon.ico">
 </head>
+
 <body>
-    test
+    <header class="header">
+        <div class="container container--header">
+            <div class="header-wrapper">
+                <a href="#" class="header__logo"><img src="/img/cat.png" alt="logo"></a>
+                <span class="header__heart"></span>
+                <h1 class="header__title">ITs cat</h1>
+            </div>
+            <button class="header__burger" aria-label="Open menu"></button>
+            <ul class="header-list">
+                <li class="header-list__item"><a href="#cards" class="header-list__link">Cards</a></li>
+                <li class="header-list__item"><a href="#about" class="header-list__link">About Us</a></li>
+                <li class="header-list__item"><a href="#" class="header-list__link">Info</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="first" id="cards">
+        <h2 class="first__title title">My friend list</h2>
+        <div class="container">
+            <ul class="list">
+                <li class="list__item">
+                    <a href="#" class="list__link">
+                        <article>
+                            <header>
+                                <div class="header-wrapper">
+                                    <span class="type type--damage"></span>
+                                    <span class="heart">100</span>
+                                </div>
+                                <span class="rarety"></span>
+                                <span class="name">Cat</span>
+                            </header>
+                            <figure>
+                                <img class="img" src="img/cat.png" alt="cats">
+                                <figcaption>Me irl</figcaption>
+                            </figure>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas ut dolore possimus cum
+                                voluptatem
+                                ipsa impedit deserunt unde, voluptatum aliquam.</p>
+                            <footer>
+                                <span class="number">5</span>
+                            </footer>
+                        </article>
+                    </a>
+                </li>
+                <li class="list__item">
+                    <a href="#" class="list__link list__link--rare">
+                        <article>
+                            <header>
+                                <div class="header-wrapper">
+                                    <span class="type type--ghost"></span>
+                                    <span class="heart">70</span>
+                                </div>
+                                <span class="rarety"></span>
+                                <span class="name">Cat</span>
+                            </header>
+                            <figure>
+                                <img class="img" src="img/cat-smoker.gif" alt="cats">
+                                <figcaption>Me irl</figcaption>
+                            </figure>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas ut dolore possimus cum
+                                voluptatem
+                                ipsa impedit deserunt unde, voluptatum aliquam.</p>
+                            <footer>
+                                <span class="number">5</span>
+                            </footer>
+                        </article>
+                    </a>
+                </li>
+                <li class="list__item">
+                    <a href="#" class="list__link list__link--rare">
+                        <article>
+                            <header>
+                                <div class="header-wrapper">
+                                    <span class="type"></span>
+                                    <span class="heart">100</span>
+                                </div>
+                                <span class="rarety"></span>
+                                <span class="name">Cat</span>
+                            </header>
+                            <figure>
+                                <img class="img" src="img/cat-hello.gif" alt="cats">
+                                <figcaption>Me irl</figcaption>
+                            </figure>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem deleniti itaque,
+                                dicta
+                                accusamus earum, nesciunt nam voluptatum error eligendi dolorum porro fugit magnam
+                                cupiditate,
+                                esse obcaecati! Pariatur perferendis in dolores.</p>
+                            <footer>
+                                <span class="number">5</span>
+                            </footer>
+                        </article>
+                    </a>
+                </li>
+                <li class="list__item list__item--platinum">
+                    <a href="#" class="list__link">
+                        <article>
+                            <header>
+                                <div class="header-wrapper">
+                                    <span class="type type--defense"></span>
+                                    <span class="heart">100</span>
+                                </div>
+                                <span class="rarety"></span>
+                                <span class="name">Cat</span>
+                            </header>
+                            <figure>
+                                <img class="img" src="img/cat-finish.png" alt="cats">
+                                <figcaption>Me irl</figcaption>
+                            </figure>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis minus amet impedit
+                                aperiam,
+                                dolore exercitationem! Ipsam facere nemo perferendis magni.</p>
+                            <footer>
+                                <span class="number">5</span>
+                            </footer>
+                        </article>
+                    </a>
+                </li>
+                </li>
+                <li class="list__item">
+                    <a href="#" class="list__link list__link--golden">
+                        <article>
+                            <header>
+                                <div class="header-wrapper">
+                                    <span class="type type--damage"></span>
+                                    <span class="heart">100</span>
+                                </div>
+                                <span class="rarety"></span>
+                                <span class="name">Cat</span>
+                            </header>
+                            <figure>
+                                <img class="img" src="img/cat-rus.png" alt="cats">
+                                <figcaption>Me irl</figcaption>
+                            </figure>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis minus amet impedit
+                                aperiam,
+                                dolore exercitationem! Ipsam facere nemo perferendis magni.</p>
+                            <footer>
+                                <span class="number">5</span>
+                            </footer>
+                        </article>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="about__title title">About cats</h2>
+            <div class="about-wrapper">
+                <div class="about-block">
+                    <div class="about-images">
+                        <img src="img/about.png" alt="about" class="about-images__img">
+                    </div>
+                    <div class="about-block__text">
+                        <h3 class="about-block__title">Lorem ipsum dolor sit.</h3>
+                        <ul class="cat-types">
+                            <li class="cat-types__item">
+                                <span title="Defender" class="cat-types__icon cat-types__icon--defense"></span>
+                            </li>
+                            <li class="cat-types__item">
+                                <span title="Damage Dealer" class="cat-types__icon cat-types__icon--damage"></span>
+                            </li>
+                            <li class="cat-types__item">
+                                <span title="Magician" class="cat-types__icon cat-types__icon--magic"></span>
+                            </li>
+                            <li class="cat-types__item">
+                                <span title="Healer" class="cat-types__icon cat-types__icon--heal"></span>
+                            </li>
+                            <li class="cat-types__item">
+                                <span title="Psychotype" class="cat-types__icon cat-types__icon--ghost"></span>
+                            </li>
+                        </ul>
+                        <p class="about-block__desctiption">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Magni,
+                            aspernatur, quam fuga similique ex, mollitia ipsum beatae placeat id dignissimos voluptatum
+                            quo
+                            maxime. Assumenda tempora impedit iusto ad a accusantium asperiores nesciunt labore
+                            quibusdam
+                            ullam, deleniti minima delectus quas iste architecto, sit commodi optio veniam.</p>
+                        <ul class="about-stats">
+                            <li class="about-stats__item">Lorem ipsum dolor sit.</li>
+                            <li class="about-stats__item">Lorem ipsum dolor sit amet.</li>
+                            <li class="about-stats__item">Lorem ipsum dolor sit amet consectetur.</li>
+                            <li class="about-stats__item">Lorem, ipsum dolor.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__copyright">&copy; Copyright 2024 Kittens</p>
+        </div>
+    </footer>
 </body>
+
+<script src="js/main.js"></script>
+
 </html>
-/

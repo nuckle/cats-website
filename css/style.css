@@ -353,11 +353,81 @@ article header .heart::after {
     display: inline-block;
 }
 
-.list__item--golden .rarety {
+.list__link--golden .rarety {
     background-image: url('../img/money.svg');
 }
 
-.list__item--platinum .rarety {
+@supports (background-blend-mode: overlay) {
+    .list__link--platinum {
+      background-image: linear-gradient(45deg, white 10%, black 90%);
+      background-blend-mode: overlay;
+    }
+  }
+
+  @keyframes wheelHueColor {
+    from, to { background-color: hsl(324, 70%, 45%); }
+    10%      { background-color: hsl(360, 65%, 45%); }
+    20%      { background-color: hsl( 36, 80%, 45%); }
+    30%      { background-color: hsl( 72, 75%, 35%); }
+    40%      { background-color: hsl(108, 65%, 35%); }
+    50%      { background-color: hsl(144, 75%, 35%); }
+    60%      { background-color: hsl(180, 75%, 35%); }
+    70%      { background-color: hsl(216, 60%, 45%); }
+    80%      { background-color: hsl(252, 65%, 50%); }
+    90%      { background-color: hsl(288, 60%, 40%); }
+  }
+
+
+.list__link--platinum  {
+    /* color: hsl(324, 70%, 45%); */
+    animation: wheelHueColor 10s infinite;
+    background-color: hsl(324, 70%, 45%);
+
+    /* background-image: linear-gradient(white, white), #000; */
+    /* background-image: linear-gradient(white, white), linear-gradient(
+        90deg,
+        rgb(219, 95, 95) 0%,
+        #d4a257 10%,
+        rgba(208, 222, 33, 1) 20%,
+        rgba(79, 220, 74, 1) 30%,
+        rgb(86, 219, 217) 40%,
+        rgba(47, 201, 226, 1) 50%,
+        rgb(87, 138, 197) 60%,
+        rgb(121, 74, 214) 70%,
+        rgb(186, 90, 220) 80%,
+        rgba(251, 7, 217, 1) 90%,
+        rgb(218, 61, 61) 100%
+    ); */
+    /* border: double var(--border-size) transparent;
+    background-origin: border-box;
+    background-clip: content-box, border-box; */
+    /* background-image: linear-gradient(white, white),
+        conic-gradient(from var(--angle),
+            #191825 0deg 90deg,
+            #865DFF 90deg 180deg,
+            #E384FF 180deg 270deg,
+            #FFA3FD 270deg 360deg);
+    border: double var(--border-size) transparent;  */
+}
+
+.list__link--platinum article {
+    background-image: linear-gradient(
+        45deg,
+        rgb(219, 95, 95) 0%,
+        #d4a257 10%,
+        rgba(208, 222, 33, 1) 20%,
+        rgba(79, 220, 74, 1) 30%,
+        rgb(86, 219, 217) 40%,
+        rgba(47, 201, 226, 1) 50%,
+        rgb(87, 138, 197) 60%,
+        rgb(121, 74, 214) 70%,
+        rgb(186, 90, 220) 80%,
+        rgba(251, 7, 217, 1) 90%,
+        rgb(218, 61, 61) 100%
+    );
+}
+
+.list__link--platinum .rarety {
     background-image: url('../img/crown.svg');
 }
 

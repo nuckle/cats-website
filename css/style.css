@@ -96,6 +96,22 @@ body {
     transition: 0.2s transform;
 }
 
+.header__search-btn {
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+.header__search-btn:hover,
+.header__search-btn:focus {
+    cursor: pointer;
+}
+
+.header__search-btn img {
+    width: 40px;
+    height: 40px;
+}
+
 .header-list__link {
     text-decoration: none;
     color: #fff;
@@ -275,6 +291,8 @@ article header .type--damage {
 article header .type--ghost {
     background-image: url('../img/ghost.svg');
 }
+
+
 
 article header .heart::after {
     content: '';

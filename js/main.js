@@ -20,4 +20,3 @@ document.addEventListener('click', (e) => {
         menu.classList.remove('header__list--show');
     }
 })
-}

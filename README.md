@@ -6,3 +6,4 @@
 - search icon in the middle of header
 - tooltips for cards
 - stats for cards
+- change color on scroll (footer)

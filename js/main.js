@@ -21,16 +21,27 @@ document.addEventListener("click", (e) => {
 });
 
 const scrollBtn = document.querySelector(".scroll-btn");
-const footer = document.querySelector("footer");
+const footer = document.querySelector(".footer");
 
 window.onscroll = () => {
-	if (
-		document.body.scrollTop > 70 ||
-		document.documentElement.scrollTop > 70
-	) {
+	const scrollTop = document.documentElement.scrollTop;
+	const clientHeight = document.documentElement.clientHeight;
+	const scrollHeight = scrollTop + clientHeight;
+
+	const documentHeight = document.documentElement.scrollHeight;
+
+	const footerHeight = footer?.clientHeight;
+
+	if (document.body.scrollTop > 70 || scrollTop > 70) {
 		scrollBtn.classList.add("scroll-btn--visible");
 	} else {
 		scrollBtn.classList.remove("scroll-btn--visible");
+	}
+
+	if (scrollHeight >= (documentHeight - footerHeight)) {
+		scrollBtn.classList.add("scroll-btn--white");
+	} else {
+		scrollBtn.classList.remove("scroll-btn--white");
 	}
 };
 

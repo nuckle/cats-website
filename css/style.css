@@ -25,6 +25,7 @@ html {
 	width: 34px;
 	border-radius: 4px;
 	transition:
+		background-color 0.2s linear,
 		visibility 0.2s linear,
 		opacity 0.2s linear;
 }
@@ -38,18 +39,20 @@ html {
 	background-color: #fff;
 
 	.scroll-btn__icon {
-		background: #000;
+		background-color: #000;
 	}
 }
 
 .scroll-btn__icon {
 	mask: url("../img/arrow.svg");
-	background: #fff;
+	background-color: #fff;
 	mask-size: cover;
 	display: block;
 	height: 100%;
 	width: 100%;
 	transform: rotate(180deg);
+	transition:
+		background-color 0.2s linear;
 }
 
 @font-face {

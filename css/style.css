@@ -212,10 +212,11 @@ body {
 .list {
 	list-style-type: none;
 	padding-left: 0;
-	column-gap: 15px;
+	column-gap: 25px;
 	row-gap: 15px;
 	display: grid;
-	grid-template-columns: repeat(5, 1fr);
+	grid-template-columns: repeat(auto-fit, minmax(auto, 320px));
+	justify-content: center;
 }
 
 .list__item article {
@@ -250,6 +251,8 @@ body {
 
 .list__item {
 	transition: transform 0.2s;
+	height: 100%;
+	place-self: center;
 }
 
 .list__item::after {
@@ -624,14 +627,12 @@ article header .heart::after {
 }
 
 @media (max-width: 1200px) {
-	.list__link figure {
-		padding: 0 20px;
-	}
-}
-
-@media (max-width: 992px) {
 	.list {
 		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.list__link figure {
+		padding: 0 20px;
 	}
 }
 

@@ -1,6 +1,9 @@
 # A small website about cats
 
-![](img/preview.png)
+<details>
+  <summary>Preview</summary>
+  <img src="img/preview.png" alt="preview">
+</details>
 
 ## Live versions
 

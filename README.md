@@ -7,8 +7,8 @@
 
 ## Live versions
 
-- [GitHub](https://nuckle.github.io/itscat/)
-- [GitLab](https://w973.gitlab.io/itscat/)
+- [GitHub](https://nuckle.github.io/cats-website/)
+- [GitLab](https://w973.gitlab.io/cats-website/)
 
 
 ## TODO

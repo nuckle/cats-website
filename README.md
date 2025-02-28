@@ -2,7 +2,7 @@
 
 <details>
   <summary>Preview</summary>
-  <img src="img/preview.png" alt="preview">
+  <img src="img/preview.png" alt="Site preview">
 </details>
 
 ## Live versions
